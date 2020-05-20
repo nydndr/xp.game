@@ -1,0 +1,42 @@
+body
+{
+    margin: 0;
+    width: 100vw; height: 100vh;
+    background-image: url('wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.attention
+{
+    font-weight: bold;
+}
+
+#end
+{
+    width: 80vw;
+    margin-left: 10vw;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.error
+{
+    width: 20vw;
+}
+
+.score
+{
+    width: 15vw;
+}
+
+.no
+{
+    display: none;
+}
+
+.random
+{
+    position: absolute;
+}

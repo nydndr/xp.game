@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Windows XP</title>
+        <meta charset="UTF-8">
+        <!-- Embeding windows XP css library -->
+        <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+        <link rel="stylesheet" href="view/style.css"> 
+        <link rel="icon" type="image/icon" sizes="16x16" href="view/icon.png">
+    </head>
+    
+    <body>
+        <div id="welcome-section" class="window" style="width: 30vw; margin: auto;">
+            <div class="title-bar">
+                <div class="title-bar-text">Welcome!</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <p class="bold">This game will find out if you are a real windows user.<p>
+                <p>If you are, you master the ability of closing error tabs. Let's see how fast you can do it!</p>
+                <p>Close the tabs as fast as you can. They'll span faster and faster at every second.</p>
+                <p class="bold" style="color: red;">If you let more than 10 of them open at the same time, you lose.</p>
+                <p class="bold" style="color: blue;">Play in full-screen mode for deeper imersion.</p>
+                <button id="play-btn">Play</button>
+            </div>
+        </div>
+
+        <div class="window" id="end">
+            <div class="title-bar">
+                <div class="title-bar-text">Endgame</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <pre>Microsoft&#10094;R&#10095; Windows DOS 
+                &#10094;C&#10095; Copyright Microsoft Corp 1990-2001.
+                <br>C:&#92;WINDOWS&#92;SYSTEM32> You can build a command line easily with a window and pre tag
+                </pre>
+                <pre>You're an <span id="finalScore"></span> XP Windows user!</pre>
+                <pre>This code belongs to <a href="https://github.com/nydndr/xp.game">@nydndr</a> and this visual belongs to <a href="https://github.com/botoxparty/XP.css">@botoxparty CSS library.</a></pre>
+            </div>
+        </div>
+
+        <div id="joke-window" class="window" style="width: 30vw; margin: auto; display: none;">
+            <div class="title-bar">
+                <div class="title-bar-text">Haha</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <p>It's take a while to start, it's just... Windows.</p>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="game.js"> </script>
+    </body>
+
+</html>
